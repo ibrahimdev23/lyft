@@ -25,7 +25,6 @@ app.post('/test', (req, res) => {
     let result = ''
     const {string_to_cut} = req.body   // Destructuring the value from req.body object
     result = everyThirdLetter(string_to_cut)  
-    console.log({"return_string":`${result}`})
     res.status(200).send({"return_string":`${result}`})
 })
 
